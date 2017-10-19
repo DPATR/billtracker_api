@@ -5,6 +5,8 @@ This is the API for the Bill Tracker application.
 Author: Denise Patriquin
 Created: 17/15/2017
 
+***** Link to API application:  [ADD URL HERE]
+
 # STRUCTURE
 
 The API follows the standard project structure in Rails:
@@ -23,32 +25,16 @@ The API follows the standard project structure in Rails:
 
 ## API
 
-User authentication is built-in.  Scripts are included to test build-in actions.
+User authentication is built-in.  Scripts are included to test built-in actions.
 
 ### Authentication
 
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
-| POST   | `/sign-up`             | `users#signup`    |
-| POST   | `/sign-in`             | `users#signin`    |
-| PATCH  | `/change-password/:id` | `users#changepw`  |
-| DELETE | `/sign-out/:id`        | `users#signout`   |
-
-### Users
-
-| Verb | URI Pattern | Controller#Action |
-|------|-------------|-------------------|
-| GET  | `/users`    | `users#index`     |
-| GET  | `/users/1`  | `users#show`      |
-
-### Billtracker
-
-| Verb   | URI Pattern            | Controller#Action      |
-|--------|------------------------|------------------------|
-| GET    | `/get-bills`           | `bills#getbills`       |
-| POST   | `/create-bills`        | `bills#createbills`    |
-| PATCH  | `/update-bill/:id`     | `bills#updatebill`     |
-| DELETE | `/delete-bill/:id`     | `bills#deletebill`     |
+| POST   | `/users`               | `users#signup`    |
+| POST   | `/users`               | `users#signin`    |
+| PATCH  | `/users/:id`           | `users#changepw`  |
+| DELETE | `/users/:id`           | `users#signout`   |
 
 ### Bills
 
