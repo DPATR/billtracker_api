@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171028140043) do
+ActiveRecord::Schema.define(version: 20171028161951) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bills", force: :cascade do |t|
-    t.string "creditor", null: false
-    t.string "billing_month", null: false
-    t.integer "amount_due", null: false
+    t.string "creditor"
+    t.string "billing_month"
+    t.integer "amount_due"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
